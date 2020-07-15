@@ -27,7 +27,7 @@ class VueSweetalert2 {
 
         for (methodName in swalLocalInstance) {
             if (
-                Object.prototype.hasOwnProperty.call(swalLocalInstance, methodName) &&
+                // Object.prototype.hasOwnProperty.call(swalLocalInstance, methodName) &&
                 typeof swalLocalInstance[methodName] === 'function'
             ) {
                 swalFunction[methodName] = (method => {
